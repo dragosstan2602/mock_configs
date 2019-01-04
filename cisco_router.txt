@@ -1,0 +1,22 @@
+aaa new-model
+!
+aaa authorization exec default local
+!
+username gns3 privilege 15 password gns3
+!
+enable password gns3
+!
+hostname IOS-RT01
+!
+ip domain-name home.lab
+!
+interface Gi1
+ ip add 192.168.0.51 255.255.255.0
+ no shut
+!
+line console 0
+ logg synch
+!
+line vty 0 4
+ transport input all
+!

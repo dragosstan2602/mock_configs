@@ -1,0 +1,10 @@
+no zerotouch enable
+!
+hostname EOS-SW01
+!
+interface management 1
+  ip add 192.168.0.52/24
+!
+management api http-commands
+   protocol http
+   no shutdown
